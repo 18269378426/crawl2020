@@ -1,0 +1,102 @@
+2021-04-07 21:07:25 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: crawl2020)
+2021-04-07 21:07:25 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.1.1, Platform Windows-10-10.0.19041-SP0
+2021-04-07 21:07:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawl2020',
+ 'CONCURRENT_REQUESTS': 8,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 5,
+ 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': './log/log.txt',
+ 'LOG_LEVEL': 20,
+ 'NEWSPIDER_MODULE': 'crawl2020.spiders',
+ 'REDIRECT_ENABLED': False,
+ 'RETRY_ENABLED': False,
+ 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler',
+ 'SPIDER_MODULES': ['crawl2020.spiders'],
+ 'STATS_DUMP': False,
+ 'TELNETCONSOLE_ENABLED': False}
+2021-04-07 21:07:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats']
+2021-04-07 21:07:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['crawl2020.middlewares.Crawl2020DownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawl2020.middlewares.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-04-07 21:07:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-04-07 21:07:27 [kafka.conn] INFO: <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2021-04-07 21:07:27 [kafka.conn] INFO: Probing node bootstrap-0 broker version
+2021-04-07 21:07:27 [kafka.conn] INFO: <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2021-04-07 21:07:27 [kafka.conn] INFO: Broker version identified as 2.5.0
+2021-04-07 21:07:27 [kafka.conn] INFO: Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2021-04-07 21:07:27 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_redis.pipelines.RedisPipeline',
+ 'crawl2020.pipelines.ClearTextPipeline',
+ 'crawl2020.pipelines.ConvertPostOnPipeline',
+ 'crawl2020.pipelines.ElasticSearchPipeline',
+ 'crawl2020.pipelines.KafkaPipeline']
+2021-04-07 21:07:27 [scrapy.core.engine] INFO: Spider opened
+2021-04-07 21:07:32 [KafkaPipeline] INFO: send item bbs_guilinlife,烧出了磨茹云,http://bbs.guilinlife.com/forum.php?mod=viewthread&tid=9854076&extra=page%3D1
+2021-04-07 21:07:32 [kafka.conn] INFO: <BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2021-04-07 21:07:32 [kafka.conn] INFO: <BrokerConnection node_id=0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2021-04-07 21:07:32 [kafka.conn] INFO: <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connected> [IPv6 ('::1', 9092, 0, 0)]>: Closing connection. 
+2021-04-07 21:07:34 [KafkaPipeline] INFO: send item bbs_guilinlife,红油米粉，味道好极了,http://bbs.guilinlife.com/forum.php?mod=viewthread&tid=9854077&extra=page%3D1
+2021-04-07 21:07:41 [KafkaPipeline] INFO: send item bbs_guilinlife,前天上午,美哉漓江雾景,http://bbs.guilinlife.com/forum.php?mod=viewthread&tid=9854079&extra=page%3D1
+2021-04-07 21:07:47 [KafkaPipeline] INFO: send item bbs_guilinlife,是自己太蠢，还是骗子太多，还是其他的？,http://bbs.guilinlife.com/forum.php?mod=viewthread&tid=9854088&extra=page%3D1
+2021-04-07 21:08:23 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: crawl2020)
+2021-04-07 21:08:23 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.1.1, Platform Windows-10-10.0.19041-SP0
+2021-04-07 21:08:23 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawl2020',
+ 'CONCURRENT_REQUESTS': 8,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 5,
+ 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': './log/log.txt',
+ 'LOG_LEVEL': 20,
+ 'NEWSPIDER_MODULE': 'crawl2020.spiders',
+ 'REDIRECT_ENABLED': False,
+ 'RETRY_ENABLED': False,
+ 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler',
+ 'SPIDER_MODULES': ['crawl2020.spiders'],
+ 'STATS_DUMP': False,
+ 'TELNETCONSOLE_ENABLED': False}
+2021-04-07 21:08:23 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats']
+2021-04-07 21:08:23 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['crawl2020.middlewares.Crawl2020DownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'crawl2020.middlewares.RotateUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-04-07 21:08:23 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-04-07 21:08:38 [scrapy.utils.log] INFO: Scrapy 2.4.0 started (bot: crawl2020)
+2021-04-07 21:08:38 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 17:00:18) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.1.1, Platform Windows-10-10.0.19041-SP0
+2021-04-07 21:08:38 [kafka.conn] INFO: <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: connecting to localhost:9092 [('::1', 9092, 0, 0) IPv6]
+2021-04-07 21:08:38 [kafka.conn] INFO: Probing node bootstrap-0 broker version
+2021-04-07 21:08:38 [kafka.conn] INFO: <BrokerConnection node_id=bootstrap-0 host=localhost:9092 <connecting> [IPv6 ('::1', 9092, 0, 0)]>: Connection complete.
+2021-04-07 21:08:38 [kafka.conn] INFO: Broker version identified as 2.5.0
+2021-04-07 21:08:38 [kafka.conn] INFO: Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup

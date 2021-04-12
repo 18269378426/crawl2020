@@ -1,0 +1,1971 @@
+2021-04-08 09:55:38,967 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 09:55:38,999 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 09:55:39,001 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000292C4A18C88>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 09:55:41,137 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 09:55:41,140 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 09:55:41,143 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000292DF636FD0>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 09:55:43,215 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 09:55:43,216 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 09:55:43,217 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000292DF636E80>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 09:55:43,235 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 09:55:43,235 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+2021-04-08 09:55:43,236 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 09:55:43,237 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+2021-04-08 11:09:30,695 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 11:09:30,726 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 11:09:30,730 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000252CBAD8C88>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 11:10:11,638 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 11:10:11,643 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 11:10:11,646 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x00000199C7EDBC88>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 11:13:32,038 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAAin-7bBv5ppySj8x4gebz8kge7rzqtH03RNQzoYMOXSo&max_behot_time=0&_signature=_02B4Z6wo00d013ydBSQAAIDAzGzp7vkGcit8uAGAAL8utcghrq-D8eo6VAr69LBGe8mNXcAp9JrHBQtZo4zb4LIQrQdLg0rf8RTYmQ741n.CCqVEhFW1z5UX9ELBG.AtZ3cC.NeYByeNvGSUf9> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:13:37,433 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 06:03,http://wz.ggnews.com.cn/index.php?m=show&id=209246 
+2021-04-08 11:13:37,891 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500232-1-1.html 
+2021-04-08 11:13:41,494 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-11-10,http://wz.ggnews.com.cn/index.php?m=show&id=6689 
+2021-04-08 11:13:41,539 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAAfRCkl8qCBxOB1PbMDAgVVAFbHfmQ-806BAv4qpH7WI4&max_behot_time=0&_signature=_02B4Z6wo00f016jF31gAAIDAGDQzkzjNH3-o4NvAAIo9ww020vs8AUykcOA1QSaiDb1gdWcqvQb5LjN2k5am4olUwj9r6CUiKyeYMW0OZunqqOB-4cQd8.a-Kcw5mRgPxJO7ArPLDOiqgXQd09> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:13:42,403 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://tieba.baidu.com/p/7270237620> (referer: https://tieba.baidu.com/f?kw=%E6%A1%82%E6%9E%97%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6)
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\scrapy\crawl2020\crawl2020\spiders\baidu_tieba.py", line 130, in parse_item
+    item['postBy'] = response.css('.d_name ::text').extract()[1]
+IndexError: list index out of range
+2021-04-08 11:13:43,528 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500238-1-1.html 
+2021-04-08 11:13:46,417 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-01-09 16:01,http://wz.ggnews.com.cn/index.php?m=show&id=197532 
+2021-04-08 11:13:46,426 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/15 10:55:39,https://www.fcgtt.com/article/article_7541.html 
+2021-04-08 11:13:46,920 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/2/21 16:22:18,http://wlwz3.hcwang.cn/wentixx.asp?did=63353 
+2021-04-08 11:13:47,454 MainProcess ConvertPostOnPipeline ERROR    error postOn: 15714次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50414&tp=2 
+2021-04-08 11:13:47,529 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/3/12 11:58:23,http://wlwz3.hcwang.cn/wentixx.asp?did=63409 
+2021-04-08 11:13:48,990 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAADRkgBDdJpBqFULfPbe8bUcoqba80n-6ym71ofgeZ-ks&max_behot_time=0&_signature=_02B4Z6wo00f0119mrZgAAIDA75dBU4Ci8f9fQ6kAALfnfk8zDGUSgwvTBAbb-9936kKH-QEeDt8YrabrrFsbNb3Ucw-Rq6eY-dOgkY5ZJGzpXD6o2.Y0hk5j42yLdeBvqgRKQ30N5bCUqNXkcb> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:13:49,624 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/10 10:54:51,https://www.fcgtt.com/article/article_7519.html 
+2021-04-08 11:13:49,626 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500243-1-1.html 
+2021-04-08 11:13:50,939 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAA4x6xZBxIaYnhFJ_G0cKUrSvrlDAetEmxYrAa04aXKkI&max_behot_time=0&_signature=_02B4Z6wo00d01nLeimAAAIDBwi9mqJGm2q5y-47AAPzBhBvdFY0fINh9B44FFTbL5TFoUFoM4ApQn5SQQKVojQXhPi1BH13pWOJBRpKA6OQ5ebRxNA2.iTmGHIZc2eJBl36XbvGGUhyAU3vSca> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:13:51,416 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500244-1-1.html 
+2021-04-08 11:13:52,966 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/10 10:55:47,https://www.fcgtt.com/article/article_7520.html 
+2021-04-08 11:13:54,689 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 13:03,http://wz.ggnews.com.cn/index.php?m=show&id=209287 
+2021-04-08 11:13:57,013 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAARnTuZ9N2DVRlbafa9TFnRRxd2ry5_rEEIfrfEjHVmbY&max_behot_time=0&_signature=_02B4Z6wo00f01rzhI6wAAIDBDBDPZ6RXLjK8xCcAAM9KjCxIQxMGQ65bNC2669QIyvYn3Kb7h8Pabi-XaE8GPe6hoLIRWk6pV0J4FWqpZFKVVbUOSiaGLOVuFFToURG7JTyiKK8RKa8p0vMv74> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:13:57,759 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2019/12/2 16:17:19,http://wlwz3.hcwang.cn/wentixx.asp?did=63210 
+2021-04-08 11:13:57,883 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500245-1-1.html 
+2021-04-08 11:13:58,260 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-11-09,http://wz.ggnews.com.cn/index.php?m=show&id=189818 
+2021-04-08 11:13:59,599 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/4 15:55:01,https://www.fcgtt.com/article/article_7531.html 
+2021-04-08 11:14:00,171 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://www.toutiao.com/api/pc/feed/?category=profile_all&utm_source=toutiao&visit_user_token=MS4wLjABAAAAWggDU5dKdmwSzXmzFZ0cx2ru3gT0_-Pr_2yVhV7Zedg&max_behot_time=0&_signature=_02B4Z6wo00f01MSqvaAAAIDDdFtRa4D9UCTEj7kAAFE0FgGtbYShcC1pRmpPOHfG6FP.euqkpGsACZCzcpofQ.hTXdhFS.cuOqpdahP4GANXpd4C6o.yQHObI9RsONCd4E4iwtrruaOsg6651d> (referer: None)
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 120, in iter_errback
+    yield next(it)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\utils\python.py", line 353, in __next__
+    return next(self.data)
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 340, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\python2\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\python2\lib\site-packages\scrapy\core\spidermw.py", line 62, in _evaluate_iterable
+    for r in iterable:
+  File "D:\scrapy\crawl2020\crawl2020\spiders\toutiao.py", line 34, in parse_json
+    json_str = json.loads(response.text)
+  File "D:\python2\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "D:\python2\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\python2\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2021-04-08 11:14:02,008 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500248-1-1.html 
+2021-04-08 11:14:03,228 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-23 00:03,http://wz.ggnews.com.cn/index.php?m=show&id=209112 
+2021-04-08 11:14:03,516 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/30 8:59:55,https://www.fcgtt.com/article/article_7545.html 
+2021-04-08 11:14:04,618 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/3/20 16:53:42,http://wlwz3.hcwang.cn/wentixx.asp?did=63452 
+2021-04-08 11:14:05,448 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://tieba.baidu.com/p/7270307287> (referer: https://tieba.baidu.com/f?kw=%E5%8D%97%E5%AE%81%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6)
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\scrapy\crawl2020\crawl2020\spiders\baidu_tieba.py", line 130, in parse_item
+    item['postBy'] = response.css('.d_name ::text').extract()[1]
+IndexError: list index out of range
+2021-04-08 11:14:07,538 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 09:03,http://wz.ggnews.com.cn/index.php?m=show&id=209264 
+2021-04-08 11:14:08,941 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500249-1-1.html 
+2021-04-08 11:14:09,408 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2019/10/23 16:24:56,http://wlwz3.hcwang.cn/wentixx.asp?did=63110 
+2021-04-08 11:14:09,680 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/30 9:59:48,https://www.fcgtt.com/article/article_7546.html 
+2021-04-08 11:14:14,053 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 12:03,http://wz.ggnews.com.cn/index.php?m=show&id=209283 
+2021-04-08 11:14:16,129 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500250-1-1.html 
+2021-04-08 11:14:16,526 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/31 15:10:24,https://www.fcgtt.com/article/article_7547.html 
+2021-04-08 11:14:16,701 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/3/9 15:30:10,http://wlwz3.hcwang.cn/wentixx.asp?did=63393 
+2021-04-08 11:14:17,410 MainProcess ConvertPostOnPipeline ERROR    error postOn: 35975次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50401&tp=2 
+2021-04-08 11:14:20,129 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://tieba.baidu.com/p/7270325574> (referer: https://tieba.baidu.com/f?kw=%E5%8D%97%E5%AE%81%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6)
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\scrapy\crawl2020\crawl2020\spiders\baidu_tieba.py", line 130, in parse_item
+    item['postBy'] = response.css('.d_name ::text').extract()[1]
+IndexError: list index out of range
+2021-04-08 11:14:20,654 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-11-17,http://wz.ggnews.com.cn/index.php?m=show&id=6790 
+2021-04-08 11:14:21,304 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500252-1-1.html 
+2021-04-08 11:14:23,738 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/4/6 9:16:22,https://www.fcgtt.com/article/article_7548.html 
+2021-04-08 11:14:27,714 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-11-17,http://wz.ggnews.com.cn/index.php?m=show&id=6792 
+2021-04-08 11:14:28,548 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500254-1-1.html 
+2021-04-08 11:14:31,518 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2016/4/29 15:45:57,https://www.fcgtt.com/article/article_2445.html 
+2021-04-08 11:14:33,709 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 15:03,http://wz.ggnews.com.cn/index.php?m=show&id=209299 
+2021-04-08 11:14:34,984 MainProcess ConvertPostOnPipeline ERROR    error postOn: 25265次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50408&tp=2 
+2021-04-08 11:14:36,206 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2016/6/20 15:06:32,https://www.fcgtt.com/article/article_2751.html 
+2021-04-08 11:14:36,484 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500255-1-1.html 
+2021-04-08 11:14:37,295 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/3/23 17:41:49,http://wlwz3.hcwang.cn/wentixx.asp?did=63464 
+2021-04-08 11:14:39,805 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 10:03,http://wz.ggnews.com.cn/index.php?m=show&id=209274 
+2021-04-08 11:14:42,435 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500256-1-1.html 
+2021-04-08 11:14:42,663 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2016/8/23 15:58:59,https://www.fcgtt.com/article/article_3198.html 
+2021-04-08 11:14:47,066 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 16:03,http://wz.ggnews.com.cn/index.php?m=show&id=209302 
+2021-04-08 11:14:48,545 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/12 18:39:18,https://www.fcgtt.com/article/article_5261.html 
+2021-04-08 11:14:48,979 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500257-1-1.html 
+2021-04-08 11:14:53,437 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/3/6 14:58:57,http://wlwz3.hcwang.cn/wentixx.asp?did=63384 
+2021-04-08 11:14:53,724 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-11-10,http://wz.ggnews.com.cn/index.php?m=show&id=6686 
+2021-04-08 11:14:54,553 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/17 17:42:44,https://www.fcgtt.com/article/article_5277.html 
+2021-04-08 11:14:54,819 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500258-1-1.html 
+2021-04-08 11:14:55,806 MainProcess ConvertPostOnPipeline ERROR    error postOn: 36704次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50400&tp=2 
+2021-04-08 11:14:59,987 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-12-02 09:12,http://wz.ggnews.com.cn/index.php?m=show&id=192868 
+2021-04-08 11:15:00,340 MainProcess ConvertPostOnPipeline ERROR    error postOn: 42542次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50389&tp=2 
+2021-04-08 11:15:02,319 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500261-1-1.html 
+2021-04-08 11:15:02,508 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/22 16:36:54,https://www.fcgtt.com/article/article_5286.html 
+2021-04-08 11:15:06,603 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-02-01,http://wz.ggnews.com.cn/index.php?m=show&id=201564 
+2021-04-08 11:15:08,442 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500264-1-1.html 
+2021-04-08 11:15:08,941 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/22 16:42:05,https://www.fcgtt.com/article/article_5287.html 
+2021-04-08 11:15:13,209 MainProcess ConvertPostOnPipeline ERROR    error postOn: 38266次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50398&tp=2 
+2021-04-08 11:15:13,664 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500265-1-1.html 
+2021-04-08 11:15:13,736 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-12-01,http://wz.ggnews.com.cn/index.php?m=show&id=6966 
+2021-04-08 11:15:13,856 MainProcess ConvertPostOnPipeline ERROR    error postOn: 30347次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50386&tp=2 
+2021-04-08 11:15:13,917 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/24 17:09:17,https://www.fcgtt.com/article/article_5290.html 
+2021-04-08 11:15:18,194 MainProcess ConvertPostOnPipeline ERROR    error postOn: 40751次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50391&tp=2 
+2021-04-08 11:15:18,298 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500266-1-1.html 
+2021-04-08 11:15:20,137 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-01-15 18:01,http://wz.ggnews.com.cn/index.php?m=show&id=198544 
+2021-04-08 11:15:20,842 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/24 17:14:41,https://www.fcgtt.com/article/article_5291.html 
+2021-04-08 11:15:25,880 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-05-25 10:05,http://wz.ggnews.com.cn/index.php?m=show&id=161153 
+2021-04-08 11:15:25,919 MainProcess ConvertPostOnPipeline ERROR    error postOn: 29993次,http://wlwz3.hcwang.cn/bumenwentixx.asp?did=50387&tp=2 
+2021-04-08 11:15:26,028 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500267-1-1.html 
+2021-04-08 11:15:26,480 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 11:17:18,https://www.fcgtt.com/article/article_5292.html 
+2021-04-08 11:15:29,267 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-08-20 13:08,http://wz.ggnews.com.cn/index.php?m=show&id=177524 
+2021-04-08 11:15:29,837 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500268-1-1.html 
+2021-04-08 11:15:32,379 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 17:59:16,https://www.fcgtt.com/article/article_5293.html 
+2021-04-08 11:15:35,090 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 16:03,http://wz.ggnews.com.cn/index.php?m=show&id=209308 
+2021-04-08 11:15:37,120 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500270-1-1.html 
+2021-04-08 11:15:39,466 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 18:00:52,https://www.fcgtt.com/article/article_5294.html 
+2021-04-08 11:15:43,081 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500271-1-1.html 
+2021-04-08 11:15:43,094 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 17:03,http://wz.ggnews.com.cn/index.php?m=show&id=209311 
+2021-04-08 11:15:46,152 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 18:25:55,https://www.fcgtt.com/article/article_5295.html 
+2021-04-08 11:15:48,808 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2015-11-10,http://wz.ggnews.com.cn/index.php?m=show&id=6687 
+2021-04-08 11:15:50,035 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500279-1-1.html 
+2021-04-08 11:15:53,205 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 18:29:01,https://www.fcgtt.com/article/article_5296.html 
+2021-04-08 11:15:55,933 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-10-27,http://wz.ggnews.com.cn/index.php?m=show&id=187974 
+2021-04-08 11:15:57,279 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500286-1-1.html 
+2021-04-08 11:16:00,933 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/25 18:40:57,https://www.fcgtt.com/article/article_5297.html 
+2021-04-08 11:16:01,979 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-12-24 08:12,http://wz.ggnews.com.cn/index.php?m=show&id=195654 
+2021-04-08 11:16:03,743 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500289-1-1.html 
+2021-04-08 11:16:03,848 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/8/31 19:06:41,https://www.fcgtt.com/article/article_5323.html 
+2021-04-08 11:16:09,483 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-01-07 07:01,http://wz.ggnews.com.cn/index.php?m=show&id=197283 
+2021-04-08 11:16:10,232 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500292-1-1.html 
+2021-04-08 11:16:10,785 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/9/4 12:35:16,https://www.fcgtt.com/article/article_5337.html 
+2021-04-08 11:16:14,270 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/10/1 11:54:05,https://www.fcgtt.com/article/article_5425.html 
+2021-04-08 11:16:15,864 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500295-1-1.html 
+2021-04-08 11:16:16,235 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 17:03,http://wz.ggnews.com.cn/index.php?m=show&id=209314 
+2021-04-08 11:16:19,883 MainProcess scrapy.core.scraper ERROR    Spider error processing <GET https://tieba.baidu.com/p/7270460554> (referer: https://tieba.baidu.com/f?kw=%E5%B9%BF%E8%A5%BF%E6%B0%91%E6%97%8F%E5%A4%A7%E5%AD%A6)
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\scrapy\crawl2020\crawl2020\spiders\baidu_tieba.py", line 130, in parse_item
+    item['postBy'] = response.css('.d_name ::text').extract()[1]
+IndexError: list index out of range
+2021-04-08 11:16:20,975 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500301-1-1.html 
+2021-04-08 11:16:21,195 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/10/11 17:33:49,https://www.fcgtt.com/article/article_5441.html 
+2021-04-08 11:16:21,874 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-22 16:03,http://wz.ggnews.com.cn/index.php?m=show&id=209065 
+2021-04-08 11:16:27,200 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 08:03,http://wz.ggnews.com.cn/index.php?m=show&id=209250 
+2021-04-08 11:16:27,473 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500302-1-1.html 
+2021-04-08 11:16:28,134 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2017/12/29 16:20:39,https://www.fcgtt.com/article/article_5583.html 
+2021-04-08 11:16:34,555 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500304-1-1.html 
+2021-04-08 11:16:34,634 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 08:03,http://wz.ggnews.com.cn/index.php?m=show&id=209251 
+2021-04-08 11:16:35,630 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/1/6 10:33:55,https://www.fcgtt.com/article/article_5598.html 
+2021-04-08 11:16:40,697 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500305-1-1.html 
+2021-04-08 11:16:41,180 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-01-13,http://wz.ggnews.com.cn/index.php?m=show&id=198175 
+2021-04-08 11:16:41,594 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/1/15 9:31:39,https://www.fcgtt.com/article/article_5599.html 
+2021-04-08 11:16:45,860 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500306-1-1.html 
+2021-04-08 11:16:47,390 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-03,http://wz.ggnews.com.cn/index.php?m=show&id=205828 
+2021-04-08 11:16:48,437 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/4/15 17:47:39,https://www.fcgtt.com/article/article_5736.html 
+2021-04-08 11:16:51,984 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/6/25 9:34:16,https://www.fcgtt.com/article/article_5828.html 
+2021-04-08 11:16:53,227 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500308-1-1.html 
+2021-04-08 11:16:54,851 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 09:03,http://wz.ggnews.com.cn/index.php?m=show&id=209261 
+2021-04-08 11:16:58,367 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/7/4 15:22:19,https://www.fcgtt.com/article/article_5860.html 
+2021-04-08 11:16:58,750 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020-11-25,http://wz.ggnews.com.cn/index.php?m=show&id=192017 
+2021-04-08 11:16:59,526 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500310-1-1.html 
+2021-04-08 11:17:05,098 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/9/6 16:16:06,https://www.fcgtt.com/article/article_6010.html 
+2021-04-08 11:17:05,896 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500311-1-1.html 
+2021-04-08 11:17:05,958 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-23 09:03,http://wz.ggnews.com.cn/index.php?m=show&id=209135 
+2021-04-08 11:17:10,426 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500312-1-1.html 
+2021-04-08 11:17:12,484 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2018/9/18 10:59:09,https://www.fcgtt.com/article/article_6039.html 
+2021-04-08 11:17:12,861 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-24 17:03,http://wz.ggnews.com.cn/index.php?m=show&id=209316 
+2021-04-08 11:17:17,041 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500313-1-1.html 
+2021-04-08 11:17:17,365 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-22 18:03,http://wz.ggnews.com.cn/index.php?m=show&id=209072 
+2021-04-08 11:17:19,624 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2019/2/25 17:11:00,https://www.fcgtt.com/article/article_6306.html 
+2021-04-08 11:17:23,752 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-23 19:03,http://wz.ggnews.com.cn/index.php?m=show&id=209198 
+2021-04-08 11:17:23,867 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2019/2/27 15:31:20,https://www.fcgtt.com/article/article_6311.html 
+2021-04-08 11:17:24,178 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500314-1-1.html 
+2021-04-08 11:17:30,409 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2019/4/8 21:34:30,https://www.fcgtt.com/article/article_6386.html 
+2021-04-08 11:17:31,038 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1500316-1-1.html 
+2021-04-08 11:17:31,386 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-23 22:03,http://wz.ggnews.com.cn/index.php?m=show&id=209217 
+2021-04-08 11:17:36,113 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/4/20 9:12:35,https://www.fcgtt.com/article/article_6950.html 
+2021-04-08 11:17:36,891 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492205-1-1.html 
+2021-04-08 11:17:38,583 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-03,http://wz.ggnews.com.cn/index.php?m=show&id=205834 
+2021-04-08 11:17:40,291 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2020/11/2 15:06:24,https://www.fcgtt.com/article/article_7314.html 
+2021-04-08 11:17:43,165 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492244-1-1.html 
+2021-04-08 11:17:44,691 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-02-01,http://wz.ggnews.com.cn/index.php?m=show&id=201558 
+2021-04-08 11:17:46,845 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/1/28 15:38:04,https://www.fcgtt.com/article/article_7510.html 
+2021-04-08 11:17:49,282 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492249-1-1.html 
+2021-04-08 11:17:53,729 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492267-1-1.html 
+2021-04-08 11:17:53,854 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/1/28 15:41:38,https://www.fcgtt.com/article/article_7511.html 
+2021-04-08 11:17:58,412 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/1/28 15:45:08,https://www.fcgtt.com/article/article_7512.html 
+2021-04-08 11:18:00,940 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492291-1-1.html 
+2021-04-08 11:18:04,733 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/1/29 11:13:48,https://www.fcgtt.com/article/article_7513.html 
+2021-04-08 11:18:05,917 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-25 15:03,http://wz.ggnews.com.cn/index.php?m=show&id=209398&model_id=6 
+2021-04-08 11:18:07,582 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492605-1-1.html 
+2021-04-08 11:18:10,653 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/1 17:29:56,https://www.fcgtt.com/article/article_7515.html 
+2021-04-08 11:18:11,803 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492690-1-1.html 
+2021-04-08 11:18:12,706 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-16 16:03,http://wz.ggnews.com.cn/index.php?m=show&id=207897 
+2021-04-08 11:18:15,562 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/1 17:42:03,https://www.fcgtt.com/article/article_7516.html 
+2021-04-08 11:18:16,974 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1492903-1-1.html 
+2021-04-08 11:18:20,388 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-20 18:03,http://wz.ggnews.com.cn/index.php?m=show&id=208803&model_id=6 
+2021-04-08 11:18:21,137 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/1 17:43:36,https://www.fcgtt.com/article/article_7517.html 
+2021-04-08 11:18:22,947 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1493043-1-1.html 
+2021-04-08 11:18:28,057 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/2/2 14:50:05,https://www.fcgtt.com/article/article_7518.html 
+2021-04-08 11:18:28,168 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-03-23 01:03,http://wz.ggnews.com.cn/index.php?m=show&id=209116&model_id=6 
+2021-04-08 11:18:29,666 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1493105-1-1.html 
+2021-04-08 11:18:36,281 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/2 16:30:26,https://www.fcgtt.com/article/article_7527.html 
+2021-04-08 11:18:36,445 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1493141-1-1.html 
+2021-04-08 11:18:41,974 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/3 17:28:43,https://www.fcgtt.com/article/article_7529.html 
+2021-04-08 11:18:43,193 MainProcess ConvertPostOnPipeline ERROR    error postOn:  ,http://bbs.xinpg.com/thread-1493201-1-1.html 
+2021-04-08 11:18:47,046 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021/3/3 17:38:43,https://www.fcgtt.com/article/article_7530.html 
+2021-04-08 11:18:47,246 MainProcess ConvertPostOnPipeline ERROR    error postOn: 2021-04-08 10:04,http://wz.ggnews.com.cn/index.php?m=show&id=211700 
+2021-04-08 15:04:34,355 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:34,475 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:34,477 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4BC57BC88>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:36,648 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:36,652 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:36,655 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D7198F98>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:38,785 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:38,788 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:38,791 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D7198DD8>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:38,810 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:04:38,811 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+2021-04-08 15:04:38,814 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:04:38,815 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+2021-04-08 15:04:40,887 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:40,890 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:40,893 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D71C6550>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:42,978 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:42,981 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:42,983 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D71EEC88>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:45,084 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:45,087 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:45,090 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D721A4A8>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:04:47,197 MainProcess scrapy.core.engine ERROR    Scraper close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 325, in <lambda>
+    dfd.addBoth(lambda _: self.scraper.close_spider(spider))
+  File "D:\python2\lib\site-packages\scrapy\core\scraper.py", line 86, in close_spider
+    slot.closing = defer.Deferred()
+AttributeError: 'NoneType' object has no attribute 'closing'
+2021-04-08 15:04:47,201 MainProcess scrapy.core.engine ERROR    Scheduler close failure
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 328, in <lambda>
+    dfd.addBoth(lambda _: slot.scheduler.close(reason))
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 155, in close
+    self.flush()
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 158, in flush
+    self.df.clear()
+AttributeError: 'Scheduler' object has no attribute 'df'
+2021-04-08 15:04:47,206 MainProcess scrapy.utils.signal ERROR    Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x000001D4D7243BE0>>
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy_redis\scheduler.py", line 141, in open
+    debug=spider.settings.getbool('DUPEFILTER_DEBUG'),
+TypeError: __init__() got an unexpected keyword argument 'server'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: ("Failed to instantiate dupefilter class '%s': %s", 'crawl2020.elasticSearchDupeFilter.ElasticSearchDumpFilter', TypeError("__init__() got an unexpected keyword argument 'server'",))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\pydispatch\robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "D:\python2\lib\site-packages\scrapy\extensions\corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-04-08 15:10:46,741 MainProcess twisted CRITICAL Unhandled Error
+Traceback (most recent call last):
+  File "D:/scrapy/crawl2020/startall.py", line 46, in run_all
+    self.runner.start(False)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 327, in start
+    reactor.run(installSignalHandlers=False)  # blocking call
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\base.py", line 1283, in run
+    self.mainLoop()
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\base.py", line 1292, in mainLoop
+    self.runUntilCurrent()
+--- <exception caught here> ---
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\base.py", line 913, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+  File "D:\python2\lib\site-packages\scrapy\utils\reactor.py", line 50, in __call__
+    return self._func(*self._a, **self._kw)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 137, in _next_request
+    self.crawl(request, spider)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 218, in crawl
+    self.schedule(request, spider)
+  File "D:\python2\lib\site-packages\scrapy\core\engine.py", line 223, in schedule
+    if not self.slot.scheduler.enqueue_request(request):
+  File "D:\python2\lib\site-packages\scrapy\core\scheduler.py", line 90, in enqueue_request
+    if not request.dont_filter and self.df.request_seen(request):
+  File "D:\scrapy\crawl2020\crawl2020\elasticSearchDupeFilter.py", line 45, in request_seen
+    exists = elasticHelper.doc_exists(self.settings, self.es, url)
+  File "D:\scrapy\crawl2020\crawl2020\elasticHelper.py", line 50, in doc_exists
+    result = es.search(index=get_index_name(settings),   body=dsl)
+  File "D:\python2\lib\site-packages\elasticsearch\client\utils.py", line 152, in _wrapped
+    return func(*args, params=params, headers=headers, **kwargs)
+  File "D:\python2\lib\site-packages\elasticsearch\client\__init__.py", line 1663, in search
+    body=body,
+  File "D:\python2\lib\site-packages\elasticsearch\transport.py", line 392, in perform_request
+    raise e
+  File "D:\python2\lib\site-packages\elasticsearch\transport.py", line 365, in perform_request
+    timeout=timeout,
+  File "D:\python2\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 269, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "D:\python2\lib\site-packages\elasticsearch\connection\base.py", line 316, in _raise_error
+    status_code, error_message, additional_info
+elasticsearch.exceptions.RequestError: RequestError(400, 'parsing_exception', 'Unknown key for a START_ARRAY in [fields].')
+
+2021-04-08 15:27:06,787 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:06,789 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,011 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,011 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,031 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,032 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,033 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,033 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,034 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,035 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,036 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,037 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,129 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,130 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,155 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,156 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,165 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,166 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,167 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,168 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,169 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,178 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,179 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,180 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,194 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,195 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,217 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,217 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,261 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,262 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,295 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,295 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,319 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,320 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,355 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,356 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,382 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,383 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,404 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,405 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,431 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,432 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,455 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,456 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,487 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,487 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,512 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,513 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,606 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,606 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,610 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,611 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,613 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,613 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,696 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,697 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,701 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,702 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,703 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,704 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,705 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,705 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,719 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,720 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,813 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,813 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,814 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,816 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,818 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,818 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,820 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,830 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,831 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,832 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,833 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,833 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,884 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,884 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,899 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,900 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path
+2021-04-08 15:27:07,916 MainProcess twisted CRITICAL Unhandled error in Deferred:
+2021-04-08 15:27:07,917 MainProcess twisted CRITICAL 
+Traceback (most recent call last):
+  File "D:\python2\lib\site-packages\scrapy\utils\misc.py", line 57, in load_object
+    dot = path.rindex('.')
+ValueError: substring not found
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Roaming\Python\Python36\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "D:\python2\lib\site-packages\scrapy\crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+ValueError: Error loading object 'ElasticSearchDumpFilter': not a full path

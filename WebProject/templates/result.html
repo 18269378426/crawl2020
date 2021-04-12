@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+    <head>
+        <title>结果</title>
+        <link rel="icon" type="image/x-icon" href="../static/img/logo.jpg"/>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="../static/css/style.css" type="text/css">
+        <link href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css" rel="stylesheet">
+        
+
+        <style>
+        ul.pagination {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.pagination li {display: inline;}
+
+        ul.pagination li a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        ul.pagination li a.active {
+            background-color: #0086DB;
+            color: white;
+        }
+
+        ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+        /* 搜索关键词高亮 */
+        span.highlighted {
+        color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="left" align="center" background="b">
+            <form action="/result/" method="get">
+                
+                <a href="/search" style="text-decoration:none ">
+                    <img src="../static/img/logo.jpg"  alt="logo" id="small_logo"/>
+                </a>
+                {% if keyword %}
+                    <input type="text" name="text" placeholder= "请输入关键字" value= {{ keyword }} id="search"/>
+                {% else %}
+                    <input type="text" name="text" placeholder= "请输入关键字" value= "" id="search"/>
+                {% endif %}
+                <input type="submit" value="查询一下" id="submit_button"/>
+                <label>选择：
+                <select name="education">
+                    <option value ="标题">标题</option>
+                    <option value ="关键字">关键字</option>
+                    <option value ="来源">来源</option>
+                    <option value="作者">作者</option>
+                </select>
+                </label>
+            </form>
+
+        <div style="width:760px;">
+            <font size="2" color="gray" style="float:left;">找到 {{count}} 条结果 （用时约 {{ times }} 秒）</font>
+        </div>
+        {% for content in contents %}
+        <article class="excerpt" style="" align="left">
+        <a class="focus" href="#" title="" ><img class="thumb" data-original="images/201610181739277776.jpg" src={{ content.logo }} alt="" style="display: inline;"></a>
+        <header>
+            <a class="cat" href="#" title="" >{{ content.postBy }}<i></i></a>
+            <h2><a href={{ content.url }} title=""  >{{ content.title }}</a>
+            </h2>
+        </header>
+        <p class="meta">
+            <time class="cat"><i class="glyphicon glyphicon-time" ></i> {{ content.source }} </time>
+            <span class="views"><i class="glyphicon glyphicon-eye-open"></i> {{ content.spider }} </span>
+            <a class="comment" href="" title="" target="_blank" ><i class="glyphicon glyphicon-comment"></i> {{ content.spiderTags }} </a>
+            <a class="comment" href="" title="" target="_blank" ><i class="glyphicon glyphicon-comment"></i> {{ content.postOn }} </a>
+        </p>
+            <p class="note">{{content.text}} </p>
+        </article>
+       {% endfor %}
+
+        {% if contents %}
+            <ul class="pagination">
+                {% for page in page_urls %}
+                {% if page.0 == p %}
+                    <li><a class="active" href={{ page.1 }}>{{page.0}}</a></li>
+                {% else %}
+                    <li><a href={{ page.1 }}>{{page.0}}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+
+   </div>
+
+    <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
+    </script>
+
+    </body>
+
+</html>

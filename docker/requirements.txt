@@ -1,0 +1,25 @@
+Scrapy==2.4.0
+elasticsearch==7.10.1
+scrapyd
+pytz
+kafka-python==2.0.2
+maya
+psycopg2-binary==2.8.6
+pyzmq
+django==3.1.3
+# selenium
+# djangorestframework
+coreapi-cli
+pyyaml
+# django-filter
+requests
+django-bootstrap4
+coloredlogs
+# elasticsearch_dsl==7.10.1
+# solrpy
+# redisbloom
+# redis
+pybloom_live 
+selenium
+elastic-app-search
+python-dotenv

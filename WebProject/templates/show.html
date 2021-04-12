@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+ <head>
+   <title>详细信息</title>
+   <link rel="icon" type="image/x-icon" href="../static/img/logo.jpg"/> 
+  <meta charset="utf-8" /> 
+  <link rel="stylesheet" href="../static/css/style.css" type="text/css" />   
+</head>
+ <body>
+
+   <div id="show_search" align="center" > 
+
+    <form action="/result/" method="get">
+      {%csrf_token%} 
+     <a href="/search" style="text-decoration:none "> <img src="../static/img/logo.jpg" alt="logo" id="small_logo" /> </a> 
+     <input type="text" name="text" placeholder="请输入关键字" value="" id="search" />
+     <input type="submit" value="查询一下" id="submit_button" />
+        <label>选择：
+            <select name="education">
+                <option value ="标题">标题</option>
+                <option value ="关键字">关键字</option>
+                <option value ="来源">来源</option>
+                <option value="作者">作者</option>
+            </select>
+        </label>
+    </form>
+
+    <div style="width:800px;text-align:left;">
+
+    <h1 style="font-size:20px;">{{content.title}}</h1>
+        <hr>作者：</hr>{{content.postBy}}  &nbsp; &nbsp; &nbsp; <hr>网站来源：</hr>{{content.source}} &nbsp; &nbsp; &nbsp; <hr>爬虫名：</hr>{{content.spider}}
+    <br>
+        <hr>相关范围：</hr>{{ content.spiderTags }} &nbsp; &nbsp; &nbsp; <hr>url：</hr><a href={{ content.url }} title="" >{{content.url}}</a>  &nbsp; &nbsp; &nbsp; <hr>发布日期：</hr>{{content.postOn}}
+
+   <article> 
+    <p><hr>阅读正文：</hr>{{content.text}}</p>
+   </article> 
+   <div class="article-tags">
+    爬取标签时间：
+    <a class="cat" href="#list/2/" rel="tag"></a>
+    <a  rel="tag">{{content.crawlOn}}</a>
+   </div> 
+   <div class="relates" align="left"> 
+    <div class="title"> 
+     <h3>热门搜索</h3>
+    </div> 
+    <ul> 
+     <li><a href="/result/?text=时空网&education=来源" title="">时空网</a></li>
+     <li><a href="/result/?text=百度贴吧&education=来源" title="">百度贴吧</a></li>
+     <li><a href="/result/?text=宜州论坛&education=来源" title="">宜州论坛</a></li>
+     <li><a href="/result/?text=桂林生活网论坛&education=来源" title="">桂林生活网论坛</a></li>
+     <li><a href="/result/?text=合浦123论坛&education=来源" title="">合浦123论坛</a></li>
+     <li><a href="/result/?text=南国早报论坛&education=来源" title="">南国早报论坛</a></li>
+     <li><a href="/result/?text=天涯社区&education=来源" title="">天涯社区</a></li>
+     <li><a href="/result/?text=南珠网论坛&education=来源" title="">南珠网论坛</a></li>
+    </ul> 
+   </div> 
+ </div>
+   </div> 
+ </body>
+</html>
